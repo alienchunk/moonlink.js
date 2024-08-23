@@ -224,7 +224,7 @@ class Node {
                         this.manager.emit("debug", "Moonlink.js > Player " +
                             player.guildId +
                             " has an exception: " +
-                            payload.exception);
+                            JSON.stringify(payload.exception));
                         break;
                     }
                     case "WebSocketClosedEvent": {
