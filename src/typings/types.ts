@@ -1,12 +1,16 @@
-export type TSearchSources = "youtube" | "youtubemusic" | "soundcloud";
+export type TSearchSources =
+  | "youtube"
+  | "youtubemusic"
+  | "soundcloud"
+  | "spotify";
 export type TLoadResultType =
   | "track"
   | "playlist"
   | "search"
   | "empty"
   | "error"
-  | TLoadResultNodeLinkType
-export type TLoadResultNodeLinkType = 
+  | TLoadResultNodeLinkType;
+export type TLoadResultNodeLinkType =
   | "short"
   | "album"
   | "artist"
